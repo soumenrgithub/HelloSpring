@@ -14,7 +14,7 @@ public class HelloWorldController {
 			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
 		System.out.println("In controller");
 
-		ModelAndView mv = new ModelAndView("helloworld");
+		ModelAndView mv = new ModelAndView("Hello");
 		mv.addObject("message", message);
 		mv.addObject("name", name);
 		return mv;
